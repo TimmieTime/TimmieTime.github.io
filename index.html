@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmie's socials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://github.com/Stijnxyz/bio/blob/main/images/image.png?raw=true');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        :root {
+            --gui-width: 300px;
+            --gui-height: 250px;
+        }
+
+        .gui-container {
+            background: linear-gradient(to bottom left, rgba(26, 12, 42, 1), rgba(9, 7, 10, 1)), url('https://github.com/Stijnxyz/bio/blob/main/images/image.png?raw=true'); /* Gradient background */
+            padding: 20px;
+            border-radius: 10px;
+            width: var(--gui-width);
+            height: var(--gui-height);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the top */
+        }
+
+        .profile-picture {
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+            border-radius: 50%; /* Make it circular */
+            background-color: white; /* Set a default background color */
+            /* You can set the background image using background-image property */
+            /* Example: background-image: url('profile-picture.jpg'); */
+            margin-bottom: 10px; /* Add margin to move it higher */
+        }
+
+        .name {
+            font-size: 24px; /* Adjust font size as needed */
+            color: white; /* Set text color */
+            margin-top: 5px; /* Adjust spacing */
+            margin-bottom: 5px; /* Add margin to move it closer to the profile picture */
+            text-shadow: 0 0 5px white,
+                		 0 0 10px white,
+                		 0 0 20px white,
+                		 0 0 30px white;
+        }
+
+        .bio {
+            font-size: 16px; /* Adjust font size as needed */
+            color: white; /* Set text color */
+            margin-top: 5px; /* Adjust spacing */
+            margin-bottom: 10px; /* Add margin to move it closer to the name */
+            text-align: center; /* Align text center */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+            position: absolute; /* Position at the bottom */
+            bottom: 0; /* Stick to the bottom */
+        }
+
+        ul li {
+            display: inline-block; /* Display items horizontally */
+            margin-right: 10px; /* Add spacing between items */
+        }
+
+        ul li a {
+            color: white; /* Set link color */
+            font-size: 24px; /* Adjust font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="gui-container">
+        <img class="profile-picture" src="https://cdn.discordapp.com/attachments/1219674229465944189/1245045506019823717/IMG_0933.jpg?ex=6657527c&is=665600fc&hm=2a7a97793cb48786a62598858673b46775b07d13dbabd2e862bbf246214f941e&" alt="Profile Picture">
+        <div class="name">Timmie</div>
+        <div class="bio">NL | Bot Developer | Discord server Developer</div>
+        <ul>
+            <li><a href="https://discord.com/users/579223799270998062" target="_blank"><i class="fab fa-discord"></i></a></li>
+            <li><a href="https://github.com/TimmieTime" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
